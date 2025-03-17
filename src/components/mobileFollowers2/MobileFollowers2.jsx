@@ -116,269 +116,252 @@ const MobileFollowers2 = () => {
   const [paragraph] = useState("Passionate about coding and problem-solving.");
 
   return (
-    <div className="mainParent">
-      <div className="container">
-        {/* Whole profile section containing name and all till buttons  */}
-
-        <div className="whole-profile-section">
-          <div className="top-nav-section">
-            <img src={backlogo} className="backLogo" alt="" />
-            <div className="search">
-              <FiSearch className="search-icon" /> {/* Search Icon */}
-              <input type="text" placeholder="Search" />
-            </div>
-            <img src={settingsLogo} className="settingsLogo" alt="" />
+    <div className="Profile-edit-section-mainParent">
+    <div className="Profile-edit-section-container">
+      {/* Whole profile section containing name and all till buttons  */}
+  
+      <div className="Profile-edit-section-whole-profile-section">
+        <div className="Profile-edit-section-top-nav-section">
+          <img src={backlogo} className="Profile-edit-section-backLogo" alt="" />
+          <div className="Profile-edit-section-search">
+            <FiSearch className="Profile-edit-section-search-icon" />
+            <input type="text" placeholder="Search" />
           </div>
-          <div className="profile-header">
-            <div className="imageContainer">
-              <img src={profilePic} alt="Profile" className="profile-pic" />
-                <h5 className="verified">Verified</h5>
-               
-            </div>
-          <div className="parent-collabs-connection">
-          <img src={editlogo} className="edit-logo" alt="" />
-          <div className="collabsDetails">
+          <img src={settingsLogo} className="Profile-edit-section-settingsLogo" alt="" />
+        </div>
+        <div className="Profile-edit-section-profile-header">
+          <div className="Profile-edit-section-imageContainer">
+            <img src={profilePic} alt="Profile" className="Profile-edit-section-profile-pic" />
+            <h5 className="Profile-edit-section-verified">Verified</h5>
+          </div>
+          <div className="Profile-edit-section-parent-collabs-connection">
+            <img src={editlogo} className="Profile-edit-section-edit-logo" alt="" />
+            <div className="Profile-edit-section-collabsDetails">
               <h4>Collabs</h4> <span>{collabs}</span>
             </div>
-            <div className="connectionsDetails">
+            <div className="Profile-edit-section-connectionsDetails">
               <h4>Connections</h4>
               <span>{connections}</span>
             </div>
           </div>
+        </div>
+  
+        <div className="Profile-edit-section-profile-info">
+          <h2>{name}</h2>
+          <p>{title}</p>
+          <p>{address}</p>
+        </div>
+  
+        <div className="Profile-edit-section-profile-buttons">
+          {buttons.map((btn, index) => (
+            <button key={index} className="Profile-edit-section-btn">
+              {btn}
+            </button>
+          ))}
+        </div>
+      </div>
+  
+      {/* Goal Section */}
+      <div className="Profile-edit-section-aboutAndgoal-section">
+        <h3>Your Plan and Goal</h3>
+        <p>
+          {displayedText}
+          <span>
+            {fullAboutText.length > maxLength && (
+              <button className="Profile-edit-section-aboutAndgoal-button" onClick={toggleExpand}>
+                {isExpanded ? "See Less" : "See More"}
+              </button>
+            )}
+          </span>
+        </p>
+      </div>
+  
+      {/* Analytics Section */}
+      <div className="Profile-edit-section-main-analytics-parent">
+        <div className="Profile-edit-section-anlaytic-main-section">
+          <h3>Analytics</h3>
+          <div className="Profile-edit-section-analytics-container">
+            <div className="Profile-edit-section-circle"></div>
+            <div className="Profile-edit-section-circle"></div>
+            <div className="Profile-edit-section-circle"></div>
+            <div className="Profile-edit-section-circle"></div>
           </div>
-
-          <div className="profile-info">
-            <h2>{name}</h2>
-            <p>{title}</p>
-            <p>{address}</p>
+        </div>
+      </div>
+  
+      {/* About Section  */}
+      <div className="Profile-edit-section-aboutAndgoal-section">
+        <div className="Profile-edit-section-about-headingAndEdit">
+          <h3>About</h3>
+          <img src={editlogo} className="Profile-edit-section-edit-logo" alt="" />
+        </div>
+        <p>
+          {displayedText}
+          <span>
+            {fullAboutText.length > maxLength && (
+              <button className="Profile-edit-section-aboutAndgoal-button" onClick={toggleExpand}>
+                {isExpanded ? "See Less" : "See More"}
+              </button>
+            )}
+          </span>
+        </p>
+      </div>
+  
+      {/* Upload Section with Image Slider */}
+      <div className="Profile-edit-section-slider-box">
+        <h2>Upload</h2>
+        <div className="Profile-edit-section-down-slider-con">
+          <IoIosArrowBack className="Profile-edit-section-left-btn" onClick={prevSlide} />
+          <div className="Profile-edit-section-slide-track">
+            {images.slice(currentIndex, currentIndex + 3).map((image, index) => (
+              <div key={index} className="Profile-edit-section-each-slide">
+                <img src={image} alt="Slide" className="Profile-edit-section-slide-img" />
+                <p>the actual idea..... </p>
+              </div>
+            ))}
           </div>
-
-          <div className="profile-buttons">
-            {buttons.map((btn, index) => (
-              <button key={index} className="btn">
-                {btn}
+          <IoIosArrowForward className="Profile-edit-section-right-btn" onClick={nextSlide} />
+        </div>
+      </div>
+  
+      {/* Experience section */}
+      <div className="Profile-edit-section-slider-box">
+        <h2>Experience</h2>
+        <div className="Profile-edit-section-down-slider-con">
+          <IoIosArrowBack className="Profile-edit-section-left-btn" onClick={prevSlide} />
+          <div className="Profile-edit-section-slide-track">
+            {experiencesData.slice(currentIndex, currentIndex + 3).map((data, index) => (
+              <div
+                style={{ backgroundColor: color[index % color.length] }}
+                key={index}
+                className="Profile-edit-section-experince-inner-div"
+              >
+                <h3>{data.title} </h3>
+                <h5> {data.subtitle} </h5>
+                <p>{data.description} </p>
+              </div>
+            ))}
+          </div>
+          <IoIosArrowForward className="Profile-edit-section-right-btn" onClick={nextSlide} />
+        </div>
+      </div>
+  
+      {/* skills section  */}
+      <div className="Profile-edit-section-main-wrapper-section">
+        <div className="Profile-edit-section-heading-and-logos">
+          <h3>Skills</h3>
+          <div className="Profile-edit-section-logos">
+            <img src={plusLogo} className="Profile-edit-section-add-logo" alt="" />
+            <img src={editlogo} className="Profile-edit-section-edit-logo" alt="" />
+          </div>
+        </div>
+        <div className="Profile-edit-section-content-and-arrow">
+          <IoIosArrowBack className="Profile-edit-section-left-btn" onClick={prevSlide} />
+          <div className="Profile-edit-section-suggested-tags">
+            {interest.map((skill, index) => (
+              <div
+                key={index}
+                style={{ backgroundColor: color[index % color.length] }}
+                className="Profile-edit-section-tag"
+              >
+                {skill}
+              </div>
+            ))}
+          </div>
+          <IoIosArrowForward className="Profile-edit-section-right-btn" onClick={nextSlide} />
+        </div>
+      </div>
+  
+      {/* Collab Section */}
+      <div className="Profile-edit-section-main-collabs-section">
+        <div className="Profile-edit-section-heading-and-logos">
+          <h3>Collabs</h3>
+          <div className="Profile-edit-section-logos">
+            <img src={plusLogo} className="Profile-edit-section-add-logo" alt="" />
+            <img src={editlogo} className="Profile-edit-section-edit-logo" alt="" />
+          </div>
+        </div>
+        <div className="Profile-edit-section-second-div-arrowAndContent">
+          <IoIosArrowBack className="Profile-edit-section-left-btn" onClick={prevSlide} />
+          <div className="Profile-edit-section-innerDiv-onlyContent">
+            <div className="Profile-edit-section-left">
+              <div className="Profile-edit-section-collabratorCard">
+                <div className="Profile-edit-section-collab-image">
+                  <img src={image} alt="" />
+                </div>
+                <div className="Profile-edit-section-collabratorDetails">
+                  <h4>{collaboratorName}</h4>
+                  <div className="Profile-edit-section-education">
+                    {education.slice(0, 2).map((val, index) => (
+                      <h6 key={index}>{val}</h6>
+                    ))}
+                  </div>
+                  <div className="Profile-edit-section-subCollabrators">
+                    (
+                    {subCollaborators.map((val, index) => (
+                      <h6 key={index}>{val},</h6>
+                    ))}
+                    )
+                  </div>
+                </div>
+              </div>
+              <div className="Profile-edit-section-para">
+                <p>{paragraph}</p>
+              </div>
+            </div>
+            <div className="Profile-edit-section-right">
+              <img src={image} alt="" />
+            </div>
+          </div>
+          <IoIosArrowForward className="Profile-edit-section-right-btn" onClick={nextSlide} />
+        </div>
+      </div>
+  
+      {/* Interest Section */}
+      <div className="Profile-edit-section-main-wrapper-section">
+        <div className="Profile-edit-section-heading-and-logos">
+          <h3>Interests</h3>
+          <div className="Profile-edit-section-logos">
+            <img src={plusLogo} className="Profile-edit-section-add-logo" alt="" />
+            <img src={editlogo} className="Profile-edit-section-edit-logo" alt="" />
+          </div>
+        </div>
+        <div className="Profile-edit-section-content-and-arrow">
+          <IoIosArrowBack className="Profile-edit-section-left-btn" onClick={prevSlide} />
+          <div className="Profile-edit-section-suggested-tags">
+            {interest.map((skill, index) => (
+              <div
+                key={index}
+                style={{ backgroundColor: color[index % color.length] }}
+                className="Profile-edit-section-tag"
+              >
+                {skill}
+              </div>
+            ))}
+          </div>
+          <IoIosArrowForward className="Profile-edit-section-right-btn" onClick={nextSlide} />
+        </div>
+      </div>
+  
+      {/* Education Section */}
+      <div className="Profile-edit-section-main-education">
+        <div className="Profile-edit-section-upper-education">
+          <div className="Profile-edit-section-education-headingAndEdit">
+            <h3>Education</h3>
+            <img src={editlogo} className="Profile-edit-section-edit-logo" alt="" />
+          </div>
+          <div className="Profile-edit-section-buttons-section">
+            {education.map((edu, index) => (
+              <button key={index} className="Profile-edit-section-btn">
+                {edu}
               </button>
             ))}
           </div>
         </div>
-        {/* Goal Section */}
-        <div className="aboutAndgoal-section">
-          <h3>Your Plan and Goal</h3>
-          <p>
-            {displayedText}
-            <span>
-              {fullAboutText.length > maxLength && (
-                <button className="aboutAndgoal-button" onClick={toggleExpand}>
-                  {isExpanded ? "See Less" : "See More"}
-                </button>
-              )}
-            </span>
-          </p>
-        </div>
-
-        {/* Analytics Section */}
-        <div className="main-analytics-parent">
-          <div className="anlaytic-main-section">
-            <h3>Analytics</h3>
-            <div className="analytics-container">
-              <div className="circle"></div>
-              <div className="circle"></div>
-              <div className="circle"></div>
-              <div className="circle"></div>
-            </div>
-          </div>
-        </div>
-        {/* 
-        About Section  */}
-
-        <div className="aboutAndgoal-section">
-        <div className="about-headingAndEdit">
-              <h3>About</h3>
-              <img src={editlogo} className="edit-logo" alt="" />
-            </div>
-          <p>
-            {displayedText}
-            <span>
-              {fullAboutText.length > maxLength && (
-                <button className="aboutAndgoal-button" onClick={toggleExpand}>
-                  {isExpanded ? "See Less" : "See More"}
-                </button>
-              )}
-            </span>
-          </p>
-        </div>
-        {/* Upload Section with Image Slider */}
-        <div className="slider-box">
-          <h2>Upload</h2>
-          <div className="down-slider-con">
-            <IoIosArrowBack className="left-btn" onClick={prevSlide} />
-            <div className="slide-track">
-              {images
-                .slice(currentIndex, currentIndex + 3)
-                .map((image, index) => (
-                  <div   key={index}  className="each-slide">
-                    <img
-                    
-                      src={image}
-                      alt="Slide"
-                      className="slide-img"
-                    />
-                    <p>the actual idea..... </p>
-                  </div>
-                ))}
-            </div>
-            <IoIosArrowForward className="right-btn" onClick={nextSlide} />
-          </div>
-        </div>
-        {/* 
-        Experience section */}
-
-        <div className="slider-box">
-          <h2>Experience</h2>
-          <div className="down-slider-con">
-            <IoIosArrowBack className="left-btn" onClick={prevSlide} />
-            <div className="slide-track" 
-          
-            >
-              {experiencesData
-                .slice(currentIndex, currentIndex + 3)
-                .map((data, index) => (
-                  <div
-                  style={{ backgroundColor: color[index % color.length] }}
-                  key={index} className="experince-inner-div">
-                    <h3>{data.title} </h3>
-                    <h5> {data.subtitle} </h5>
-                    <p>{data.description} </p>
-                  </div>
-                ))}
-            </div>
-            <IoIosArrowForward className="right-btn" onClick={nextSlide} />
-          </div>
-        </div>
-
-        {/* skills section  */}
-
-        <div className="main-wrapper-section">
-          <div className="heading-and-logos">
-            <h3>Skills</h3>
-            <div className="logos">
-              <img src={plusLogo} className="add-logo" alt="" />
-              <img src={editlogo} className="edit-logo" alt="" />
-            </div>
-          </div>
-          <div className="content-and-arrow">
-            <IoIosArrowBack className="left-btn" onClick={prevSlide} />
-
-            <div className="suggested-tags">
-              {interest.map((skill, index) => (
-                <div
-                  key={index}
-                  style={{ backgroundColor: color[index % color.length] }}
-                  className="tag"
-                >
-                  {skill}
-                </div>
-              ))}
-            </div>
-            <IoIosArrowForward className="right-btn" onClick={nextSlide} />
-          </div>
-        </div>
-
-        {/* Collab Section */}
-
-        <div className="main-collabs-section">
-          <div className="heading-and-logos">
-            <h3>Collabs</h3>
-            <div className="logos">
-              <img src={plusLogo} className="add-logo" alt="" />
-              <img src={editlogo} className="edit-logo" alt="" />
-            </div>
-          </div>
-          <div className="second-div-arrowAndContent">
-            <IoIosArrowBack className="left-btn" onClick={prevSlide} />
-
-            <div className="innerDiv-onlyContent">
-              <div className="left">
-                <div className="collabratorCard">
-                  <div className="collab-image">
-                    <img src={image} alt="" />
-                  </div>
-                  <div className="collabratorDetails">
-                    <h4>{collaboratorName}</h4>
-                    <div className="education">
-                      {education.slice(0, 2).map((val, index) => (
-                        <h6 key={index}>{val}</h6>
-                      ))}
-                    </div>
-                    <div className="subCollabrators">
-                      (
-                      {subCollaborators.map((val, index) => (
-                        <h6 key={index}>{val},</h6>
-                      ))}
-                      )
-                    </div>
-                  </div>
-                </div>
-                <div className="para">
-                  <p>{paragraph}</p>
-                </div>
-              </div>
-              <div className="right">
-                <img src={image} alt="" />
-              </div>
-            </div>
-            <IoIosArrowForward className="right-btn" onClick={nextSlide} />
-          </div>
-        </div>
-
-        {/* Interest Section */}
-
-        <div className="main-wrapper-section">
-          <div className="heading-and-logos">
-            <h3>Interests</h3>
-            <div className="logos">
-              <img src={plusLogo} className="add-logo" alt="" />
-              <img src={editlogo} className="edit-logo" alt="" />
-            </div>
-          </div>
-          <div className="content-and-arrow">
-            <IoIosArrowBack className="left-btn" onClick={prevSlide} />
-
-            <div className="suggested-tags">
-              {interest.map((skill, index) => (
-                <div
-                  key={index}
-                  style={{ backgroundColor: color[index % color.length] }}
-                  className="tag"
-                >
-                  {skill}
-                </div>
-              ))}
-            </div>
-            <IoIosArrowForward className="right-btn" onClick={nextSlide} />
-          </div>
-        </div>
-
-        {/* Education Section */}
-
-        <div className="main-education">
-          <div className="upper-education">
-            <div className="education-headingAndEdit">
-              <h3>Education</h3>
-              <img src={editlogo} className="edit-logo" alt="" />
-            </div>
-            <div className="buttons-section">
-              {education.map((edu, index) => (
-                <button key={index} className="btn">
-                  {edu}
-                </button>
-              ))}
-            </div>
-          </div>
-          <img className="public-logo" src={publicLogo} alt="" />
-        </div>
+        <img className="Profile-edit-section-public-logo" src={publicLogo} alt="" />
       </div>
     </div>
+  </div>
   );
 };
 
