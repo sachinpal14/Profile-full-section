@@ -1,0 +1,733 @@
+.mainParent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: #cecdcd;
+  width: 30vw;
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.whole-profile-section {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: end;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.whole-profile-section .back-logo-section {
+  width: 100%;
+  display: flex;
+  padding: 8px 5px;
+}
+.back-logo {
+  font-size: 35px;
+}
+
+.profile-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  gap: 50px;
+  align-items: center;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.top-nav-section{
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  align-items: center;
+}
+.top-nav-section .backLogo, .top-nav-section .settingsLogo{
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+
+.top-nav-section .settingsLogo{
+ 
+height: 30px;
+width: 30px;
+ 
+}
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 92%;
+}
+
+.search input {
+  width: 100%;
+  padding: 10px 40px 10px 15px; /* Adjusted padding for icon */
+  border: 1px solid #ccc;
+  border: none;
+  outline: none;
+  box-shadow: inset 2px 2px 3px rgb(223, 223, 223),
+    inset -2px -2px 3px rgb(245, 245, 245);
+  border-radius: 50px;
+  background-color: #fdf9f9;
+
+  font-size: 16px;
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  right: 15px;
+  color: gray;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+
+/* Collab section  */
+
+.connectionsDetails,
+.collabsDetails {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.collabsDetails h4,
+.connectionsDetails h4 {
+  font-size: 20px;
+  font-weight: 100;
+}
+
+.collabsDetails span,
+.connectionsDetails span {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.profile-info h2 {
+  font-size: 17px;
+}
+
+.imageContainer {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+
+.profile-pic {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-buttons {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  justify-content: end;
+  padding: 2px 8px;
+}
+
+.btn {
+  background: linear-gradient(to bottom, #ffe9ed, white);
+  color: black;
+  border: 1px solid black;
+  padding: 8px 12px;
+  width: 140px;
+  font-size: 17px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* About and the Goal Section  */
+
+.about-headingAndEdit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-headingAndEdit h3{
+  font-size: 20px;
+}
+
+
+.aboutAndgoal-section {
+  padding: 5px 7px;
+  height: 110px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.aboutAndgoal-button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: rgb(144, 143, 143);
+}
+
+/* Analytics Section  */
+
+.main-analytics-parent {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+.anlaytic-main-section{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.anlaytic-main-section h3{
+  font-size: 20px;
+}
+.analytics-container {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 10px solid skyblue;
+  border-bottom-color: transparent;
+}
+
+/* Upload Section  and Experience Slider Section*/
+.slider-box {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 600px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.down-slider-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.slide-track {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.slide-img {
+  width: 100px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.each-slide p{
+font-size: 12px;
+}
+
+.left-btn,
+.right-btn {
+  font-size: 20px;
+  cursor: pointer;
+}
+/* experinece innerdiv styling  */
+
+.experince-inner-div {
+  height: 114px;
+  width: 90px;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.experince-inner-div h3 {
+  font-size: 12px;
+}
+.experince-inner-div h5 {
+  font-size: 10px;
+  color: rgb(144, 143, 143);
+}
+.experince-inner-div p {
+  font-size: 9px;
+  text-align: center;
+}
+
+/* skills section */
+
+.main-wrapper-section{
+  background-color: #fff;
+  border-radius: 10px;
+   padding: 2px;
+}
+
+.suggested-tags {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 7px;
+  gap: 10px;
+
+  justify-content: center;
+}
+
+.heading-and-logos {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 5px;
+  align-items: center;
+}
+.heading-and-logos h3 {
+  font-size: 25px;
+}
+
+ 
+.content-and-arrow .left-btn,.content-and-arrow .right-btn{
+  font-size: 40px;
+}
+
+.logos {
+  display: flex;
+  gap: 15px;
+  padding: 15px;
+}
+.logos img {
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.tag {
+  text-align: center;
+  border-radius: 5px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 20px;
+  width: 80px;
+  height: 25px;
+}
+
+/* Collab Section  */
+.main-collabs-section {
+  display: flex;
+  background-color: #fff;
+  border-radius: 10px;
+
+  flex-direction: column;
+}
+
+.main-collabs-section h3 {
+  text-align: start;
+}
+
+.collabratorCard {
+   display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.collab-image{
+  height: 50px;
+  width: 50px;
+}
+
+ 
+.collab-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.collabratorDetails {
+  flex-direction: column;
+  display: flex;
+  width: 100px;
+}
+
+.collabratorDetails h4 {
+  font-size: 15px;
+  font-weight: 500;
+  text-align: start;
+}
+
+.collabratorDetails .education {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.collabratorDetails .education h6 {
+  font-weight: 300;
+  color: #726d6dea;
+}
+
+.collabratorDetails .subCollabrators {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #514f4fea;
+}
+
+.collabratorDetails .subCollabrators h6 {
+  font-size: 7px;
+  font-weight: 100;
+  color: #828282ea;
+}
+
+.para {
+  text-align: start;
+  font-size: 14px;
+}
+.second-div-arrowAndContent {
+  display: flex;
+  align-items: center;
+}
+
+.innerDiv-onlyContent {
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.right {
+  width: 30%;
+  padding: 15px 2px;
+  display: flex;
+  justify-content: end;
+ 
+}
+.right img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+.left {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+ 
+}
+
+/* Interest section */
+
+.content-and-arrow{
+  display: flex;
+  align-items: center;
+  
+
+}
+
+
+/* Education Section */
+
+.main-education {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  align-items: center;
+  background-color: #fff  ;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.upper-education{
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.education-headingAndEdit {
+  display: flex;
+  justify-content: space-between;
+}
+
+.education-headingAndEdit h3{
+  font-size: 20px;
+}
+
+.buttons-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+}
+
+ 
+.public-logo{
+  height: 10px;
+  width: 100px;
+  object-fit: cover;
+}
+
+
+
+/* Media Query for Mobile view and dektop view change  */
+
+@media (max-width: 320px) {
+  /* General container adjustments */
+  .container {
+    width: 40vw;          /* Use full screen width */
+    padding: 5px;         /* Reduce padding for more content space */
+  }
+
+  /* Header adjustments */
+  .profile-header {
+    font-size: 16px;      /* Smaller, readable heading */
+    text-align: center;   /* Center-align for better presentation */
+  }
+
+
+ 
+
+
+  /* Profile section */
+  .whole-profile-section {
+    align-items: center;  /* Center content vertically */
+    flex-direction: column; /* Stack elements vertically */
+  }
+  .imageContainer {
+    width: 50px;          /* Smaller profile image */
+    height: 50px;
+  }
+
+  /* Buttons */
+  .profile-buttons {
+    gap: 5px;             /* Reduce gap between buttons */
+  }
+  .btn {
+    font-size: 14px;      /* Smaller button text */
+    padding: 6px 10px;    /* Compact padding, still tappable */
+    min-width: 44px;      /* Ensure touch target size */
+  }
+
+  /* Images */
+  img {
+    max-width: 100%;      /* Responsive images */
+    height: auto;
+  }
+  .slide-img {
+    width: 70px;          /* Smaller carousel images */
+    height: 100px;
+  }
+
+  /* Content sections */
+  .aboutAndgoal-section {
+    padding: 3px 5px;     /* Minimize padding */
+  }
+  .circle {
+    width: 50px;          /* Smaller circular elements */
+    height: 50px;
+  }
+  .experince-inner-div {
+    width: 80px;          /* Adjust inner content width */
+  }
+
+  /* Tags or labels */
+  .tag {
+    font-size: 12px;      /* Smaller text */
+    padding: 8px 12px;    /* Compact padding */
+  }
+
+  /* Collaborator details */
+  .collab-image {
+    width: 30px;          /* Smaller collaborator images */
+    height: 30px;
+  }
+  .collabratorDetails h4 {
+    font-size: 13px;      /* Smaller heading */
+  }
+  /* Profile Image */
+  .profile-image {
+    width: 80px;  /* Reduce size to fit the small screen */
+    height: 80px;
+    margin: 0 auto; /* Center the image for better alignment */
+    display: block; /* Ensure it’s visible and properly positioned */
+  }
+
+  /* Collab Section Heading */
+  .collab-section h2 {
+    font-size: 18px; /* Smaller font size to fit the screen */
+    text-align: center; /* Center-align for better readability */
+  }
+
+  /* Top Navigation Section */
+  .top-nav-section {
+    display: flex;
+    justify-content: space-between; /* Space icons evenly */
+    padding: 5px; /* Add padding for touch-friendly interaction */
+  }
+
+  /* Navigation Icons in img Tags */
+  .top-nav-section img {
+    width: 24px; /* Resize icons to be visible and tappable */
+    height: 24px;
+  }
+}
+
+
+/* Styles for screens up to 480px */
+@media (max-width: 480px) {
+  /* Ensure the layout fits small screens */
+  body {
+    font-size: 14px; /* Smaller font for readability */
+    padding: 10px;   /* Add padding to avoid edge crowding */
+  }
+
+  .container {
+    width: 100%;     /* Full-width container */
+    padding: 5px;    /* Minimal padding */
+  }
+
+  /* Stack navigation items vertically */
+  .navigation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Ensure buttons are tappable */
+  .button {
+    padding: 8px;
+    font-size: 14px;
+    min-width: 44px;  /* Minimum touch target size */
+    min-height: 44px;
+  }
+
+  /* Make images responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* 480px and above (small tablets) */
+@media (min-width: 480px) {
+  .container {
+    width: 90%;
+    max-width: 400px; /* Limit width for small tablets */
+    margin: 0 auto; /* Center the container */
+  }
+
+  .profile-header {
+    font-size: 20px; /* Increase font size */
+  }
+
+  .imageContainer {
+    height: 75px;
+    width: 75px;
+  }
+
+  .profile-buttons {
+    flex-direction: row; /* Horizontal buttons */
+    justify-content: center;
+  }
+
+  .btn {
+    width: 140px; /* Fixed width for buttons */
+  }
+
+  .circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .slide-img {
+    width: 100px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 740px) {
+  .container {
+    width: 80%;
+    max-width: 400px; /* Wider for tablets */
+  }
+
+  .whole-profile-section {
+    align-items: flex-end; /* Restore original alignment */
+  }
+
+  .profile-header {
+    flex-direction: row-reverse; /* Horizontal layout */
+    justify-content: flex-end;
+  }
+
+  .top-nav-section {
+    flex-direction: row; /* Horizontal navigation */
+    gap: 20px;
+  }
+
+  .profile-buttons {
+    justify-content: flex-end;
+  }
+}
+
+/* 900px and above (small desktops) */
+@media (min-width: 900px) {
+  .container {
+    width: 70%;
+    max-width: 400px; /* Adjust for small desktops */
+  }
+}
+
+/* 1062px and above (desktops) */
+@media (min-width: 1062px) {
+  .container {
+    width: 60%;
+    max-width: 400px; /* Wider for desktops */
+  }
+}
+
+/* 1440px and above (large desktops and full screen) */
+@media (min-width: 1440px) {
+  .container {
+    width: 50%;
+    max-width: 400px; /* Maximum width for large screens */
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .edit-button, .add-button {
+    display: none;
+  }
+  .whole-profile-section .top-nav-section {
+    display: none;
+  }
+}
