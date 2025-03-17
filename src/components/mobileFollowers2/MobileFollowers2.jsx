@@ -132,14 +132,19 @@ const MobileFollowers2 = () => {
           <div className="profile-header">
             <div className="imageContainer">
               <img src={profilePic} alt="Profile" className="profile-pic" />
+                <h5 className="verified">Verified</h5>
+               
             </div>
-            <div className="collabsDetails">
+          <div className="parent-collabs-connection">
+          <img src={editlogo} className="edit-logo" alt="" />
+          <div className="collabsDetails">
               <h4>Collabs</h4> <span>{collabs}</span>
             </div>
             <div className="connectionsDetails">
               <h4>Connections</h4>
               <span>{connections}</span>
             </div>
+          </div>
           </div>
 
           <div className="profile-info">
@@ -189,7 +194,7 @@ const MobileFollowers2 = () => {
         <div className="aboutAndgoal-section">
         <div className="about-headingAndEdit">
               <h3>About</h3>
-              <img src={editlogo} alt="" />
+              <img src={editlogo} className="edit-logo" alt="" />
             </div>
           <p>
             {displayedText}
@@ -257,8 +262,8 @@ const MobileFollowers2 = () => {
           <div className="heading-and-logos">
             <h3>Skills</h3>
             <div className="logos">
-              <img src={plusLogo} alt="" />
-              <img src={editlogo} alt="" />
+              <img src={plusLogo} className="add-logo" alt="" />
+              <img src={editlogo} className="edit-logo" alt="" />
             </div>
           </div>
           <div className="content-and-arrow">
@@ -285,8 +290,8 @@ const MobileFollowers2 = () => {
           <div className="heading-and-logos">
             <h3>Collabs</h3>
             <div className="logos">
-              <img src={plusLogo} alt="" />
-              <img src={editlogo} alt="" />
+              <img src={plusLogo} className="add-logo" alt="" />
+              <img src={editlogo} className="edit-logo" alt="" />
             </div>
           </div>
           <div className="second-div-arrowAndContent">
@@ -332,8 +337,8 @@ const MobileFollowers2 = () => {
           <div className="heading-and-logos">
             <h3>Interests</h3>
             <div className="logos">
-              <img src={plusLogo} alt="" />
-              <img src={editlogo} alt="" />
+              <img src={plusLogo} className="add-logo" alt="" />
+              <img src={editlogo} className="edit-logo" alt="" />
             </div>
           </div>
           <div className="content-and-arrow">
@@ -360,7 +365,7 @@ const MobileFollowers2 = () => {
           <div className="upper-education">
             <div className="education-headingAndEdit">
               <h3>Education</h3>
-              <img src={editlogo} alt="" />
+              <img src={editlogo} className="edit-logo" alt="" />
             </div>
             <div className="buttons-section">
               {education.map((edu, index) => (

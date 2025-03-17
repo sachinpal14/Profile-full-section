@@ -92,6 +92,19 @@ width: 30px;
   cursor: pointer;
 }
 
+.parent-collabs-connection{
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  position: relative;
+
+}
+.parent-collabs-connection .connectionsDetails ,.parent-collabs-connection .collabsDetails{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+ 
 
 /* Collab section  */
 
@@ -500,25 +513,73 @@ font-size: 12px;
 /* Media Query for Mobile view and dektop view change  */
 
 @media (max-width: 320px) {
+
+  
   /* General container adjustments */
   .container {
-    width: 40vw;          /* Use full screen width */
+    width: 100%;          /* Use full screen width */
     padding: 5px;         /* Reduce padding for more content space */
   }
 
   /* Header adjustments */
-  .profile-header {
-    font-size: 16px;      /* Smaller, readable heading */
-    text-align: center;   /* Center-align for better presentation */
+  .profile-header .collabsDetails h4 ,.profile-header .connectionsDetails h4{
+    font-size:15px;      /* Smaller, readable heading */
+      /* Center-align for better presentation */
+      
   }
-
-
+  .profile-info{
+    display: flex;
+   align-items: start;
  
+    flex-direction: column;
+  }
+ 
+.imageContainer h5{
+  font-size: 12px;
+  color: #ccc;
+}
 
+.parent-collabs-connection{
+  position: relative;
+ justify-content: start;
+ gap: 20px;
+ align-items: end;
+}
+  .parent-collabs-connection .edit-logo{
+    height: 20px;
+    width: 20px;
+    position: absolute;
+   top: -20px;
+    left: -10px;
+  }
+  .profile-header{
+    display: flex;
+    justify-content: space-evenly;
+   
+  }
+ .top-nav-section .settingsLogo{
+  height: 22px;
+  width: 22px;
+ }
+  .search input{
+   height: 30px;
+  }
+  .search input::placeholder{
+    font-size: 15px;
+  }
+  .collabsDetails , .connectionsDetails{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .collabsDetails span , .connectionsDetails span{
+    font-size: 20px;
+  }
 
   /* Profile section */
   .whole-profile-section {
-    align-items: center;  /* Center content vertically */
+  
+  
+    align-items: start;  /* Center content vertically */
     flex-direction: column; /* Stack elements vertically */
   }
   .imageContainer {
@@ -529,11 +590,12 @@ font-size: 12px;
   /* Buttons */
   .profile-buttons {
     gap: 5px;             /* Reduce gap between buttons */
+   
   }
   .btn {
     font-size: 14px;      /* Smaller button text */
-    padding: 6px 10px;    /* Compact padding, still tappable */
-    min-width: 44px;      /* Ensure touch target size */
+    padding: 6px 14px;    /* Compact padding, still tappable */
+    min-width: 50%;      /* Ensure touch target size */
   }
 
   /* Images */
@@ -639,7 +701,7 @@ font-size: 12px;
 @media (min-width: 480px) {
   .container {
     width: 90%;
-    max-width: 400px; /* Limit width for small tablets */
+    max-width: 450px; /* Limit width for small tablets */
     margin: 0 auto; /* Center the container */
   }
 
@@ -675,7 +737,7 @@ font-size: 12px;
 @media (min-width: 740px) {
   .container {
     width: 80%;
-    max-width: 400px; /* Wider for tablets */
+    max-width: 450px; /* Wider for tablets */
   }
 
   .whole-profile-section {
@@ -701,7 +763,7 @@ font-size: 12px;
 @media (min-width: 900px) {
   .container {
     width: 70%;
-    max-width: 400px; /* Adjust for small desktops */
+    max-width: 450px; /* Adjust for small desktops */
   }
 }
 
@@ -709,7 +771,7 @@ font-size: 12px;
 @media (min-width: 1062px) {
   .container {
     width: 60%;
-    max-width: 400px; /* Wider for desktops */
+    max-width: 450px; /* Wider for desktops */
   }
 }
 
@@ -717,14 +779,17 @@ font-size: 12px;
 @media (min-width: 1440px) {
   .container {
     width: 50%;
-    max-width: 400px; /* Maximum width for large screens */
+    max-width: 450px; /* Maximum width for large screens */
   }
 }
 
 
 
 @media (min-width: 768px) {
-  .edit-button, .add-button {
+  .verified{
+    display: none;
+  }
+  .edit-logo, .add-logo {
     display: none;
   }
   .whole-profile-section .top-nav-section {
