@@ -44,23 +44,22 @@
   font-size: 20px;
 }
 
-.top-nav-section{
+.top-nav-section {
   display: flex;
   width: 100%;
   gap: 20px;
   align-items: center;
 }
-.top-nav-section .backLogo, .top-nav-section .settingsLogo{
+.top-nav-section .backLogo,
+.top-nav-section .settingsLogo {
   object-fit: cover;
   object-position: center;
   cursor: pointer;
 }
 
-.top-nav-section .settingsLogo{
- 
-height: 30px;
-width: 30px;
- 
+.top-nav-section .settingsLogo {
+  height: 30px;
+  width: 30px;
 }
 .search {
   position: relative;
@@ -92,19 +91,17 @@ width: 30px;
   cursor: pointer;
 }
 
-.parent-collabs-connection{
+.parent-collabs-connection {
   display: flex;
   justify-content: space-around;
   width: 70%;
   position: relative;
-
 }
-.parent-collabs-connection .connectionsDetails ,.parent-collabs-connection .collabsDetails{
+.parent-collabs-connection .connectionsDetails,
+.parent-collabs-connection .collabsDetails {
   display: flex;
   flex-direction: column-reverse;
 }
-
- 
 
 /* Collab section  */
 
@@ -176,10 +173,9 @@ width: 30px;
   justify-content: space-between;
 }
 
-.about-headingAndEdit h3{
+.about-headingAndEdit h3 {
   font-size: 20px;
 }
-
 
 .aboutAndgoal-section {
   padding: 5px 7px;
@@ -203,12 +199,12 @@ width: 30px;
   padding: 7px;
 }
 
-.anlaytic-main-section{
+.anlaytic-main-section {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-.anlaytic-main-section h3{
+.anlaytic-main-section h3 {
   font-size: 20px;
 }
 .analytics-container {
@@ -259,8 +255,8 @@ width: 30px;
   object-fit: cover;
   border-radius: 10px;
 }
-.each-slide p{
-font-size: 12px;
+.each-slide p {
+  font-size: 12px;
 }
 
 .left-btn,
@@ -273,7 +269,7 @@ font-size: 12px;
 .experince-inner-div {
   height: 114px;
   width: 90px;
- 
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -296,10 +292,10 @@ font-size: 12px;
 
 /* skills section */
 
-.main-wrapper-section{
+.main-wrapper-section {
   background-color: #fff;
   border-radius: 10px;
-   padding: 2px;
+  padding: 2px;
 }
 
 .suggested-tags {
@@ -321,8 +317,8 @@ font-size: 12px;
   font-size: 25px;
 }
 
- 
-.content-and-arrow .left-btn,.content-and-arrow .right-btn{
+.content-and-arrow .left-btn,
+.content-and-arrow .right-btn {
   font-size: 40px;
 }
 
@@ -364,17 +360,16 @@ font-size: 12px;
 }
 
 .collabratorCard {
-   display: flex;
+  display: flex;
   gap: 4px;
   align-items: center;
 }
 
-.collab-image{
+.collab-image {
   height: 50px;
   width: 50px;
 }
 
- 
 .collab-image img {
   height: 100%;
   width: 100%;
@@ -440,7 +435,6 @@ font-size: 12px;
   padding: 15px 2px;
   display: flex;
   justify-content: end;
- 
 }
 .right img {
   height: 100%;
@@ -453,18 +447,14 @@ font-size: 12px;
   display: flex;
   flex-direction: column;
   padding: 10px;
- 
 }
 
 /* Interest section */
 
-.content-and-arrow{
+.content-and-arrow {
   display: flex;
   align-items: center;
-  
-
 }
-
 
 /* Education Section */
 
@@ -474,12 +464,12 @@ font-size: 12px;
   width: 100%;
   gap: 10px;
   align-items: center;
-  background-color: #fff  ;
+  background-color: #fff;
   border-radius: 10px;
   padding: 10px;
 }
 
-.upper-education{
+.upper-education {
   display: flex;
   flex-direction: column;
   gap: 7px;
@@ -489,7 +479,7 @@ font-size: 12px;
   justify-content: space-between;
 }
 
-.education-headingAndEdit h3{
+.education-headingAndEdit h3 {
   font-size: 20px;
 }
 
@@ -501,142 +491,168 @@ font-size: 12px;
   justify-content: center;
 }
 
- 
-.public-logo{
+.public-logo {
   height: 10px;
   width: 100px;
   object-fit: cover;
 }
 
-
-
 /* Media Query for Mobile view and dektop view change  */
 
 @media (max-width: 320px) {
-
-  
   /* General container adjustments */
   .container {
-    width: 100%;          /* Use full screen width */
-    padding: 5px;         /* Reduce padding for more content space */
+    width: 100%; /* Use full screen width */
+    padding: 5px; /* Reduce padding for more content space */
   }
 
   /* Header adjustments */
-  .profile-header .collabsDetails h4 ,.profile-header .connectionsDetails h4{
-    font-size:15px;      /* Smaller, readable heading */
-      /* Center-align for better presentation */
-      
+  .profile-header .collabsDetails h4,
+  .profile-header .connectionsDetails h4 {
+    font-size: 15px; /* Smaller, readable heading */
+    /* Center-align for better presentation */
   }
-  .profile-info{
+  .profile-info {
     display: flex;
-   align-items: start;
- 
+    align-items: start;
+
     flex-direction: column;
   }
- 
-.imageContainer h5{
-  font-size: 12px;
-  color: #ccc;
-}
 
-.parent-collabs-connection{
-  position: relative;
- justify-content: start;
- gap: 20px;
- align-items: end;
-}
-  .parent-collabs-connection .edit-logo{
+  .imageContainer h5 {
+    font-size: 12px;
+    color: #ccc;
+  }
+
+  .parent-collabs-connection {
+    position: relative;
+    justify-content: start;
+    gap: 20px;
+    align-items: end;
+  }
+  .parent-collabs-connection .edit-logo {
     height: 20px;
     width: 20px;
     position: absolute;
-   top: -20px;
+    top: -20px;
     left: -10px;
   }
-  .profile-header{
+  .profile-header {
     display: flex;
     justify-content: space-evenly;
-   
   }
- .top-nav-section .settingsLogo{
-  height: 22px;
-  width: 22px;
- }
-  .search input{
-   height: 30px;
+  .top-nav-section .settingsLogo {
+    height: 22px;
+    width: 22px;
   }
-  .search input::placeholder{
+  .search input {
+    height: 30px;
+  }
+  .search input::placeholder {
     font-size: 15px;
   }
-  .collabsDetails , .connectionsDetails{
+  .collabsDetails,
+  .connectionsDetails {
     display: flex;
     flex-direction: column-reverse;
   }
-  .collabsDetails span , .connectionsDetails span{
+  .collabsDetails span,
+  .connectionsDetails span {
     font-size: 20px;
   }
 
   /* Profile section */
   .whole-profile-section {
-  
-  
-    align-items: start;  /* Center content vertically */
+    align-items: start; /* Center content vertically */
     flex-direction: column; /* Stack elements vertically */
   }
   .imageContainer {
-    width: 50px;          /* Smaller profile image */
+    width: 50px; /* Smaller profile image */
     height: 50px;
   }
 
   /* Buttons */
   .profile-buttons {
-    gap: 5px;             /* Reduce gap between buttons */
-   
+    gap: 5px; /* Reduce gap between buttons */
   }
   .btn {
-    font-size: 14px;      /* Smaller button text */
-    padding: 6px 14px;    /* Compact padding, still tappable */
-    min-width: 50%;      /* Ensure touch target size */
+    font-size: 14px; /* Smaller button text */
+    padding: 6px 14px; /* Compact padding, still tappable */
+    min-width: 50%; /* Ensure touch target size */
+  }
+  .upper-education {
+    width: 100%;
+    height: 100px;
   }
 
+  .upper-education button {
+    width: 10px;
+    height: 20px;
+
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+  }
+
+  .buttons-section {
+    height: 120px;
+
+    display: flex !important ;
+    gap: 0px !important;
+    padding: 10px !important;
+    flex-direction: row !important ;
+    justify-content: space-between !important;
+    flex-wrap: wrap !important;
+    align-items: start !important;
+    width: 100%;
+  }
+
+  .edit-logo,
+  .add-logo {
+    height: 18px;
+    width: 18px;
+  }
   /* Images */
   img {
-    max-width: 100%;      /* Responsive images */
+    max-width: 100%; /* Responsive images */
     height: auto;
   }
   .slide-img {
-    width: 70px;          /* Smaller carousel images */
+    width: 70px; /* Smaller carousel images */
     height: 100px;
   }
 
   /* Content sections */
   .aboutAndgoal-section {
-    padding: 3px 5px;     /* Minimize padding */
+    padding: 3px 5px; /* Minimize padding */
   }
   .circle {
-    width: 50px;          /* Smaller circular elements */
+    width: 50px; /* Smaller circular elements */
     height: 50px;
   }
   .experince-inner-div {
-    width: 80px;          /* Adjust inner content width */
+    width: 80px; /* Adjust inner content width */
   }
 
   /* Tags or labels */
   .tag {
-    font-size: 12px;      /* Smaller text */
-    padding: 8px 12px;    /* Compact padding */
+    font-size: 12px; /* Smaller text */
+    padding: 8px 12px; /* Compact padding */
   }
 
   /* Collaborator details */
   .collab-image {
-    width: 30px;          /* Smaller collaborator images */
+    width: 30px; /* Smaller collaborator images */
     height: 30px;
   }
   .collabratorDetails h4 {
-    font-size: 13px;      /* Smaller heading */
+    font-size: 13px; /* Smaller heading */
   }
   /* Profile Image */
   .profile-image {
-    width: 80px;  /* Reduce size to fit the small screen */
+    width: 80px; /* Reduce size to fit the small screen */
     height: 80px;
     margin: 0 auto; /* Center the image for better alignment */
     display: block; /* Ensure it’s visible and properly positioned */
@@ -660,20 +676,35 @@ font-size: 12px;
     width: 24px; /* Resize icons to be visible and tappable */
     height: 24px;
   }
-}
 
+  .experince-inner-div {
+    padding: 2px;
+width:130px !important;
+align-items: start;
+
+  }
+  .experince-inner-div p{
+    font-size: 7px;
+  }
+  .tag{
+   
+    width: 50px;
+  }
+
+  
+}
 
 /* Styles for screens up to 480px */
 @media (max-width: 480px) {
   /* Ensure the layout fits small screens */
   body {
     font-size: 14px; /* Smaller font for readability */
-    padding: 10px;   /* Add padding to avoid edge crowding */
+    padding: 10px; /* Add padding to avoid edge crowding */
   }
 
   .container {
-    width: 100%;     /* Full-width container */
-    padding: 5px;    /* Minimal padding */
+    width: 100%; /* Full-width container */
+    padding: 5px; /* Minimal padding */
   }
 
   /* Stack navigation items vertically */
@@ -686,7 +717,7 @@ font-size: 12px;
   .button {
     padding: 8px;
     font-size: 14px;
-    min-width: 44px;  /* Minimum touch target size */
+    min-width: 44px; /* Minimum touch target size */
     min-height: 44px;
   }
 
@@ -783,13 +814,12 @@ font-size: 12px;
   }
 }
 
-
-
-@media (min-width: 768px) {
-  .verified{
+@media (min-width: 450px)  {
+  .verified {
     display: none;
   }
-  .edit-logo, .add-logo {
+  .edit-logo,
+  .add-logo {
     display: none;
   }
   .whole-profile-section .top-nav-section {

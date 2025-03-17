@@ -22,7 +22,7 @@ const MobileFollowers2 = () => {
   const [buttons] = useState(["Message", "Connect"]);
   const [isExpanded, setIsExpanded] = useState(false);
 
-  const [fullAboutText] = useState(
+  const [fullAboutText,setFullAboutText] = useState(
     "Passionate developer with experience in web and mobile development. I specialize in React, Node.js, and building scalable applications. Love to work on open-source projects and contribute to the tech community."
   );
 
